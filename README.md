@@ -2,7 +2,7 @@
 
 ### Function:
 
-```angular2
+```javascript
 export function takeUntilDestroy<T>(component: any): MonoTypeOperatorFunction<T> {
   const proto = Object.getPrototypeOf(component);
   const onDestroy = proto.ngOnDestroy;
@@ -26,7 +26,7 @@ export function takeUntilDestroy<T>(component: any): MonoTypeOperatorFunction<T>
 
 ### Usage into component:
 
-```angular2
+```js
 @Component({
   selector: 'my-example',
   template: `
